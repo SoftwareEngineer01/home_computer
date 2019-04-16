@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+.menu{
+    background: #000;
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: #fff;
+}
+
+.menu li a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.slider{
+    margin-bottom: 20px;
+}
+
+.slider .imagen{
+    width: 100%;
+}
+
+.slider .imagen img{
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.servicios{
+    margin: 50px ;
+}
+
+ .subtitulo{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.servicios hr{
+    margin-bottom: 30px;
+}
+
+
+.imagen img{ 
+    width: 100%; 
+    height: auto; 
+  }
+
+.box h3{
+    margin: 5px;
+}
+
+.box p{
+    text-align: justify;
+}
+
+.separador{
+    margin: 10px;
+}
+
+  @media screen and (max-width: 400px) {
+    .box div { margin: 10px; }
+    .box { padding: 0; }
+    
+  }
+
+  .nosotros{
+    margin: 50px;
+  }
+
+
+  .nosotros p{
+      margin: 20px;
+      text-align: justify;
+  }
+
+
+  /*Contacto*/
+  .contacto {   
+    
+    margin: 50px;
+   
+  }
+  .contacto h3 {
+    margin: 30;
+    padding: 0;
+    /* font-family: 'Open Sans'; */
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px auto;
+    max-width: 880px;
+    height: 450px;
+    background: rgba(80, 77, 77, 0.32);
+    text-align: left;
+    padding: 10px 0;
+  }
+  .contacto form .subject,
+  .contacto form .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contacto form .subject label,
+  .contacto form .content label {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round';
+  }
+  .contacto form .id {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contacto form .id .name,
+  .contacto form .id .email {
+    display: inline-block;
+    width: 45%;
+  }
+  .contacto form .id .name label,
+  .contacto form .id .email label {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: 'Varela Round';
+  }
+  .contacto form .id .name input[name="email"],
+  .contacto form .id .name input[name="name"],
+  .contacto form .id .email input[name="email"],
+  .contacto form .id .email input[name="name"] {
+    width: 100%;
+    height: 40px;
+  }
+  .contacto form .subject {
+    height: 62px;
+  }
+  .contacto form .subject input[name="subject"] {
+    width: 100%;
+    height: 40px;
+  }
+  .contacto form .content textarea {
+    width: 100%;
+    resize: none;
+  }
+  .contacto form .content button {
+    margin: 5px auto;
+   
+    background: #010030;
+    padding: 8px 77px;
+    border: 1px solid #fffefd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    font-family: 'Varela Round';
+    transition: all .3;
+    color: #fff;
+  }
+  .contacto form .content button:hover {
+    background: rgb(1, 54, 17);
+    border: 1px solid #000;
+    color: #fff;
+  }
+  
+
+
+  footer{
+    margin-top: 30px;
+	background: rgba(0, 0, 0);
+	padding: 20px;
+	width: 100%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: center;    
+}
+
+@media screen and (max-width: 400px) {
+    
+    footer p {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+  }
