@@ -99,23 +99,23 @@
                 <div class="id">
                     <div class="name">
                         <label for="name">Nombre</label>
-                        <input id="name" type="text" name="name">
+                        <input id="name" type="text" name="name" required>
                     </div>
                     <div class="email">
                         <label for="email">Email</label>
-                        <input id="email" type="text" name="email">
+                        <input id="email" type="text" name="email" required>
                     </div>
                 </div>
                 <div class="subject">
                     <label for="subject">Asunto</label>
     
-                    <input id="subject" type="text" name="subject">
+                    <input id="subject" type="text" name="subject" required>
                 </div>
                 <div class="content">
                     <label id="contect" for="content">Mensaje</label>
     
-                    <textarea name="content" id="" cols="30" rows="10"></textarea>
-                    <button type="submit">Enviar</button>
+                    <textarea name="content" id="content_message" cols="30" rows="10" required></textarea>
+                    <button type="submit" id="btn_send">Enviar</button>
     
                 </div>
             </form>
@@ -129,6 +129,6 @@
     </footer>
 
 </div>
-
+    <script src="js/validation.js"></script>
 </body>
 </html>
