@@ -1,134 +1,553 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pagina Sencilla</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
-    <link rel="stylesheet" href="css/styles.css"> -->
-    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Computer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
+
     
-<div class="container">
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Inicio</a></li>               
-                <li><a href="#service">Servicios</a></li>               
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark blue darken-3 fixed-top scrolling-navbar">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand font-weight-bold" href="#">TECNOLOGIA PC</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto mr-5 text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>             
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contáctenos</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+            <!-- Links -->
 
-    <section class="slider">
-        <div class="imagen">
-            <img src="" alt="">
         </div>
-    </section>
+        <!-- Collapsible content -->
 
-    <section id="service" class="servicios">
-        <hr>
-         <h2 class="subtitulo">SERVICIOS</h2>
-        <hr>
-        <!-- row -->
+    </nav>
+    <!--/.Navbar-->
+
+
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-2" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="imagenes/monitores.jpg" alt="First slide">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="h1-responsive my-md-5">Soporte Técnico y Asistencia Remota</h1>
+                    <p>First text</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="imagenes/hardware.jpg" alt="Second slide">
+                    <div class="mask rgba-black-strong"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="h1-responsive my-md-5">Reparaciones y Mantenimientos PC</h1>
+                    <p>Secondary text</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="imagenes/code1.jpg" alt="Third slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="h1-responsive my-md-5">Desarrollo Web</h1>
+                    <p>Third text</p>
+                </div>
+            </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <!--Jumbotron-->
+    <div class="jumbotron text-center blue-grey lighten-5 ">
+        <!--Title-->
+        <h1 class="card-title h2-responsive font-bold text-uppercase"><strong>Home Computer</strong></h1>
+        <!--Subtitle-->
+        <p class="pt-2 font-bold indigo-text"><strong>Servicio 100% Especializado </strong></p>
+
+        <!--Text-->
+        <div class="d-flex justify-content-center">
+            <p class="card-text my-2" style="max-width: 43rem;">En Home Computer ofrecemos un servicio de alta calidad
+                y seguro, entendiendo las necesidades de los clientes para dar soluciones óptimas y garantizadas
+            </p>
+        </div>     
+
+    </div>
+    <!--Jumbotron-->
+
+    
+<!-- Container Cards -->
+<div class="container-fluid">   
+    
+
+    <!--Primera Sección de Cards-->
+    <section  id="servicios" class="container my-md-3">
+
+        <div class="text-center mb-5">
+            <hr>
+            <h2 class="h2-responsive font-bold ">SERVICIOS</h2>
+            <hr>
+        </div>
+
         <div class="row">
-            <div class="col-lg-6">
-                <div class="box">
-                    <div class="imagen">
-                        <img src="" alt>
-                    </div>
-                    <h3>Servicio #1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est maxime eveniet similique voluptate quidem aliquid unde veniam molestias quo doloribus voluptatibus nobis nulla laborum, doloremque ipsa dolorum tempora debitis.</p>
-                    <hr class="separador">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                    <div class="box">
-                        <div class="imagen">
-                            <img src="" alt>
-                        </div>
-                        <h3>Servicio #2</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est maxime eveniet similique voluptate quidem aliquid unde veniam molestias quo doloribus voluptatibus nobis nulla laborum, doloremque ipsa dolorum tempora debitis.</p>
-                        <hr class="separador">
-                    </div>
-                </div>
-        </div>
-       <!-- row -->
 
-       <!-- row -->
-       <div class="row">
-            <div class="col-lg-6">
-                <div class="box">
-                    <div class="imagen">
-                        <img src="" alt>
+            <div class="col-md-4">
+
+                <!-- Card Light #1 -->
+                <div class="card mb-3" >
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top img-fluid" src="imagenes/TorrePc.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
                     </div>
-                    <h3>Servicio #3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est maxime eveniet similique voluptate quidem aliquid unde veniam molestias quo doloribus voluptatibus nobis nulla laborum, doloremque ipsa dolorum tempora debitis.</p>                    
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Mantenimientos PC</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Limpieza Fisica y reparaciones de partes (Hardware)</p>
+
+                    </div>
+
                 </div>
+                <!-- Card Light -->
+
+
+
             </div>
-            <div class="col-lg-6">
-                    <div class="box">
-                        <div class="imagen">
-                            <img src="" alt>
-                        </div>
-                        <h3>Servicio #4</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit est maxime eveniet similique voluptate quidem aliquid unde veniam molestias quo doloribus voluptatibus nobis nulla laborum, doloremque ipsa dolorum tempora debitis.</p>                       
+
+
+            <div class="col-md-4">
+
+                <!-- Card Light #2 -->
+                <div class="card mb-3">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="imagenes/os.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
                     </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Sistema Operativo</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Instalación de sistemas operativos y programas - formateo de PC</p>
+
+                    </div>
+
                 </div>
-        </div>
-       <!-- row -->
+                <!-- Card Light -->
+
+
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <!-- Card Light #3 -->
+                <div class="card mb-3">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="imagenes/printer2.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center"> Impresoras</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Mantenimiento fisico de las impresoras, instalación de drivers</p>
+
+                    </div>
+
+                </div>
+                <!-- Card Light -->
+
+
+
+            </div>
+
+        </div>        
 
     </section>
+    <!--Primera Sección de Cards-->  
 
-    <section id="about" class="nosotros">
-        <hr>
-            <h2 class="subtitulo">NOSOTROS</h2>
-        <hr>
+ 
+  
+    <!--Segunda Sección de Cards-->
+    <section class="container">
 
-        <p>Somos una empresa de tecnología y ofrecemos servicios de alta calidad y seguro, entendiendo las necesidades de los clientes para dar soluciones óptimas y garantizadas, reparamos sus equipos informaticos en el menor tiempo posible, conservando siempre la calidad del servicio</p>
+        
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <!-- Card Light #1 -->
+                <div class="card mb-3">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="imagenes/desing.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Diseño Web</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Diseño y Desarrollo de Páginas Web  -  Responsive Desing</p>
+
+                    </div>
+
+                </div>
+                <!-- Card Light -->
+
+
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <!-- Card Light #2 -->
+                <div class="card mb-3">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="imagenes/support.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Soporte Remoto</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Soporte Técnico Remoto, solución a diferentes problemas técnicos PC </p>
+
+                    </div>
+
+                </div>
+                <!-- Card Light -->
+
+
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <!-- Card Light #3 -->
+                <div class="card mb-3">
+
+                    <!-- Card image -->
+                    <div class="view overlay">
+                        <img class="card-img-top" src="imagenes/data_recovery.jpg" alt="Card image cap">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body">
+
+                        <!-- Title -->
+                        <h4 class="card-title text-center">Recuperación de Datos</h4>
+                        <hr>
+                        <!-- Text -->
+                        <p class="card-text">Recuperación de datos y particiones del disco duro</p>
+
+                    </div>
+
+                </div>
+                <!-- Card Light -->
+
+
+
+            </div>
+
+        </div>
+
+        
+
     </section>
+    <!--Segunda Sección de Cards-->
+    
+    
+</div>
+<!-- Container Cards -->
 
-    <section id="contact" class="contacto">
-            <hr>
-                <h2 class="subtitulo">CONTACTO</h2>
-            <hr>
-            <form class="form">
-                <div class="id">
-                    <div class="name">
-                        <label for="name">Nombre</label>
-                        <input id="name" type="text" name="name" required>
+
+
+<!-- Parallax -->
+<div class="citas container-fluid py-5">
+   <div class="row justify-content-center">
+       <div class="col-md-8 col-lg-6 text-center">
+           <h3 class="text-uppercase">home computer</h3>
+           <p class="mt-5">
+               Reparamos sus equipos informaticos en el menor tiempo posible, conservando siempre la calidad del servicio
+           </p>
+           <!-- <a href="#" class="btn btn-primary mt-3 text-uppercase">Leer más</a> -->
+       </div>
+   </div>
+ </div>
+ <!-- Parallax -->
+
+
+
+<!--Section: Contact v.2-->
+<section class="section container-fluid" id="contacto">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-5">Contáctenos</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">¿Tiene usted alguna pregunta o requiere de un servicio? Por favor, no dude en contactarnos directamente. Nuestro equipo le responderá en cuestión de horas para ayudarle.</p>
+    
+<div class="container-fluid">
+            
+        
+    <div class="row justify-content-center">
+
+        <!--Grid column-->
+        <div class="text-center w-responsive mx-auto mb-5 ">
+            <form id="contact-form" name="contact-form" action="" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
                     </div>
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input id="email" type="text" name="email" required>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
                     </div>
                 </div>
-                <div class="subject">
-                    <label for="subject">Asunto</label>
-    
-                    <input id="subject" type="text" name="subject" required>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="content">
-                    <label id="contect" for="content">Mensaje</label>
-    
-                    <textarea name="content" id="content_message" cols="30" rows="10" required></textarea>
-                    <button type="submit" id="btn_send">Enviar</button>
-    
-                </div>
+                <!--Grid row-->
+
             </form>
-        </section>
 
+            <div class="text-center ">
+                
+                <a  id="btn_send" class="btn btn-primary btn-md">Enviar</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
 
-    <footer>
-        <div class="autor">
-             <p>&copy; 2019 Todos los derechos reservados</p>
-        </div>          
-    </footer>
+        
+    </div>
 
 </div>
-    <!-- <script src="js/validation.js"></script> -->
+
+</section>
+<!--Section: Contact v.2-->
+
+
+
+         
+<!-- Footer -->
+<footer class="page-footer font-small blue darken-3">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Nosotros</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Servicios</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+        
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#contacto">Contacto</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">
+            En Home Computer ofrecemos un servicio de alta calidad y seguro, entendiendo las necesidades de los clientes para dar soluciones óptimas y garantizadas
+            </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="#"> Home Computer</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+    <!-- SCRIPTS -->
+    
+    <!-- JQuery -->
+   
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/validaciones.js"></script>
 </body>
+
 </html>
